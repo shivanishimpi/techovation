@@ -15,7 +15,13 @@ export default function Home() {
         <h1 className={styles.title}>
           <a href="/">Techovation</a>
         </h1>
-
+        <p 
+          className={styles.description}>
+          Cause Strawberries and Cigarettes
+          <br />
+          always taste like you.
+        </p>
+{/* 
         <p 
           className={styles.description}>
           Get started by editing{" "}
@@ -23,7 +29,7 @@ export default function Home() {
           <br />
           To modify the pages, start by editing{" "}
           <code className={styles.code}>pages/posts/*.tsx</code>
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           <a
@@ -32,7 +38,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Sunshine &rarr;</h3>
-            <p>Let's talk Sunshine.</p>
+            <p>This is going to be a quick introduction to how Sunshine works and performs.</p>
           </a>
 
           <a
@@ -41,7 +47,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Moonshine &rarr;</h3>
-            <p>Let's talk Moonshine.</p>
+            <p>A consise and quick deep dive into the functioning of Moonshine and its dependencies.</p>
           </a>
           <a
             href="posts/cookie"
@@ -49,7 +55,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
+            <p>Enough blogging. <br/>Let's eat Cookies.</p>
           </a>
 
           
@@ -60,6 +66,7 @@ export default function Home() {
           >
             <h3>Kitty &rarr;</h3>
             <p>
+              I am full right now <br/>
               Let's play with kitties.
             </p>
           </a>
