@@ -1,10 +1,19 @@
 .container {
   min-height: 100vh;
+  background-image: url(../public/bg.jpg);
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.397);
+  background-size: cover;
+  background-position: center;
+  /* background-image:url('/public/bg.jpg');
+  (#494945,
+  #75726f); */
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* position: relative; */
 }
 
 .main {
@@ -17,6 +26,7 @@
 }
 
 .footer {
+  background:#38454f;
   width: 100%;
   height: 100px;
   border-top: 1px solid #38545f;
@@ -36,8 +46,8 @@
 }
 
 .title a {
-  color: #65a0a1;
-  text-decoration: none;
+  color: #848882a1;
+  text-decoration: burlywood;
 }
 
 
@@ -52,7 +62,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: dashed;
-  color: #b2c1f1;
+  color: #5799469a;
 }
 
 .title {
@@ -69,6 +79,7 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #7986ad;
 }
 
 .code {
@@ -90,11 +101,12 @@
 }
 
 .card {
+  background-color: #b2c1f18a;
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: beige;
   text-decoration: none;
   border: 1px solid #b2c1f1;
   border-radius: 10px;
@@ -104,8 +116,9 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #1e4644;
-  border-color: #4fc7bf;
+  color: #5d6786;
+  border-color: #475683;
+  background-color:aliceblue ;
 }
 
 .card h3 {
