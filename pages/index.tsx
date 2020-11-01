@@ -51,56 +51,8 @@ export default function Home() {
             <h3>Cookie &rarr;</h3>
             <p>Let's eat Cookies.</p>
           </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
 
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
-            <h3>Cookie &rarr;</h3>
-            <p>Let's eat Cookies.</p>
-          </a>
-
+          
           <a
             href="posts/kitty"
             target="_blank"
