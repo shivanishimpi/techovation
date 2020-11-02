@@ -47,7 +47,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Moonshine &rarr;</h3>
-            <p>A consise and quick deep dive into the functioning of Moonshine and its dependencies.</p>
+            <p>A concise and quick deep dive into the functioning of Moonshine and its dependencies.</p>
           </a>
           <a
             href="posts/cookie"
