@@ -97,7 +97,8 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  padding-top: 3rem;
 }
 
 .grid2 {
@@ -106,7 +107,7 @@
   justify-content: center;
   flex-wrap: wrap-reverse;
   max-width: 200px;
-  margin-left: 55rem;
+  padding: 10rem 0rem 5rem 55rem;
 }
 
 .card {

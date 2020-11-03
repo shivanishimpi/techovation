@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { stringify } from "querystring";
 import { useState } from "react";
-import styles from "../../styles/Pages.module.css";
+// import styles from "../../styles/Pages.module.css";
 import jwt from "jsonwebtoken";
 
 export default function Home() {
@@ -48,18 +48,26 @@ export default function Home() {
     }
   }
   return (
-    <div className={styles.container}>
+    <div
+      className="container"
+      style={{
+        backgroundImage: `url("../../public/bg.jpg")`,
+        backgroundRepeat: "no-repeat",
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <Head>
         <title>Techovation/Login</title>
         <link rel="icon" href="/future.svg" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.card}>
-          <h1 className={styles.title}>{message}</h1>
-          <p className={styles.description}>{secretmessage}</p>
-          <form className={styles.form} method="POST" action="../api/login">
+      <main className="main">
+        <div className="card">
+          <h1 className="title">{message}</h1>
+          <p className="description">{secretmessage}</p>
+          <form className="form" method="POST" action="../api/login">
             <input
-              className={styles.button}
+              className="button"
               type="text"
               name="username"
               value={username}
@@ -67,7 +75,7 @@ export default function Home() {
             />
             <br />
             <input
-              className={styles.button}
+              className="button"
               type="password"
               name="password"
               value={password}
@@ -75,7 +83,7 @@ export default function Home() {
             />
             <br />
             <input
-              className={styles.button}
+              className="button"
               type="button"
               onClick={submitForm}
               value="Login"
@@ -83,6 +91,121 @@ export default function Home() {
           </form>
         </div>
       </main>
+      <style jsx>{`
+        .container {
+          min-height: 100vh;
+          background-image: url(../../public/bg.jpg);
+          background-attachment: fixed;
+          background-color: rgba(0, 0, 0, 0.397);
+          background-size: cover;
+          background-position: center;
+          background-image:url('/public/bg.jpg');
+            (#494945,
+            #75726f);
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* position: relative; */
+        }
+
+        .button {
+          background: #61817d3d;
+          border-radius: 5px;
+          padding: 0.25rem;
+          margin-bottom: 0.5rem;
+          /* margin-left: 6rem; */
+          justify-content: center;
+          font-size: 1.1rem;
+          border-color: #53586b;
+          color: #000000;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+
+        .form {
+          justify-content: center;
+          align-items: center;
+          padding: 5rem 5rem 5rem 5rem;
+        }
+
+        .card {
+          background-color: #b2c1f163;
+          margin: 5rem 5rem 5rem 5rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: beige;
+          text-decoration: none;
+          border: 1px solid #8392c5;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+          align-items: center;
+        }
+
+        .card h1 {
+          margin: 3rem 1rem 4rem 2rem; /*top right bottom left*/
+          font-size: 2.5rem;
+          text-decoration: underline;
+          color: #231f38be;
+        }
+        .card p {
+          margin: 0 2rem 3rem 2rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: black;
+        }
+
+        .main {
+          padding: 5rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .footer {
+          background: #38454f;
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #38545f;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .footer img {
+          margin-left: 0.5rem;
+        }
+
+        .footer a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .logo {
+          height: 1em;
+        }
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+          color: #8392c5;
+          /* color: #7986ad; */
+        }
+      `}</style>
     </div>
   );
 }

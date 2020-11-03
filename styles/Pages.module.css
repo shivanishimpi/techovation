@@ -17,10 +17,15 @@
 }
 
 .button {
-  background: #bbb8b8;
+  background: #61817d3d;
   border-radius: 5px;
-  padding: 0.45rem;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  /* margin-left: 6rem; */
+  justify-content: center;
   font-size: 1.1rem;
+  border-color: #53586b;
+  color: #000000;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -28,6 +33,7 @@
 .form {
   justify-content: center;
   align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
 }
 .card {
   background-color: #b2c1f163;
@@ -43,16 +49,15 @@
   align-items: center;
 }
 
-
 .card h1 {
   margin: 3rem 1rem 4rem 2rem; /*top right bottom left*/
   font-size: 2.5rem;
-  text-decoration:underline;
-  color:#231f38be;
+  text-decoration: underline;
+  color: #231f38be;
 }
 .card p {
   margin: 0 2rem 3rem 2rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: black;
 }
