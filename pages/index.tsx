@@ -15,13 +15,12 @@ export default function Home() {
         <h1 className={styles.title}>
           <a href="/">Techovation</a>
         </h1>
-        <p 
-          className={styles.description}>
+        <p className={styles.description}>
           Cause Strawberries and Cigarettes
           <br />
           always taste like you.
         </p>
-{/* 
+        {/* 
         <p 
           className={styles.description}>
           Get started by editing{" "}
@@ -32,53 +31,47 @@ export default function Home() {
         </p> */}
 
         <div className={styles.grid}>
-          <a
-            href="posts/sunshine"
-            target="_blank"
-            className={styles.card}
-          >
+          <a href="posts/sunshine" target="_blank" className={styles.card}>
             <h3>Sunshine &rarr;</h3>
-            <p>This is going to be a quick introduction to how Sunshine works and performs.</p>
+            <p>
+              This is going to be a quick introduction to how Sunshine works and
+              performs.
+            </p>
           </a>
 
-          <a
-            href="posts/moonshine"
-            target="_blank"
-            className={styles.card}
-          >
+          <a href="posts/moonshine" target="_blank" className={styles.card}>
             <h3>Moonshine &rarr;</h3>
-            <p>A concise and quick deep dive into the functioning of Moonshine and its dependencies.</p>
+            <p>
+              A concise and quick deep dive into the functioning of Moonshine
+              and its dependencies.
+            </p>
           </a>
-          <a
-            href="posts/cookie"
-            target="_blank"
-            className={styles.card}
-          >
+          <a href="posts/cookie" target="_blank" className={styles.card}>
             <h3>Cookie &rarr;</h3>
-            <p>Enough blogging. <br/>Let's eat Cookies.</p>
+            <p>
+              Enough blogging. <br />
+              Let's eat Cookies.
+            </p>
           </a>
 
-          
-          <a
-            href="posts/kitty"
-            target="_blank"
-            className={styles.card}
-          >
+          <a href="posts/kitty" target="_blank" className={styles.card}>
             <h3>Kitty &rarr;</h3>
             <p>
-              I am full right now <br/>
+              I am full right now <br />
               Let's play with kitties.
             </p>
           </a>
         </div>
       </main>
+      <div className={styles.grid2}>
+        <a href="posts/login" target="_blank" className={styles.card}>
+          <h3>Login</h3>
+          {/* <style jsx></style> */}
+        </a>
+      </div>
 
       <footer className={styles.footer}>
-        <a
-          href="posts/team"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="posts/team" target="_blank" rel="noopener noreferrer">
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>

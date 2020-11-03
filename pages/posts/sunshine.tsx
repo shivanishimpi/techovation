@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import styles from "../../styles/Pages.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Techovation/Sunshine</title>
+        <link rel="icon" href="/future.svg" />
+      </Head>
       <main className={styles.main}>
         <div className={styles.card}>
           <h1 className={styles.title}>SUNSHINE: The morning bliss</h1>

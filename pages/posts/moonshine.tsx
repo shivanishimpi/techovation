@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import styles from "../../styles/Pages.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Techovation/Moonshine</title>
+        <link rel="icon" href="/future.svg" />
+      </Head>
       <main className={styles.main}>
         <div className={styles.card}>
           <h1 className={styles.title}>MOONSHINE: Tranquility of the Night</h1>
