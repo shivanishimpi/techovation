@@ -24,7 +24,10 @@ convert all `.js` files to `.tsx` files
 then create a `tfconfig.json` file  -->
 
 ```
+npm install
 npm i typescript @types/node @types/react --save-dev
+npm install jsonwebtoken 
+npm i @types/jsonwebtoken --save-dev
 npm run dev
 ```
 
